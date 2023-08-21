@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.logo_svg {
+    color: red;
+    fill: rgb(229, 9, 20);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.nav_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.8) 100%), url("/NetflixClone/images/banner.jpg");
+    background-size: cover;
+    background-position: center top;
+    padding: 10px 30px;
+    border-bottom: solid 8px #232323;
+}
+
+.nav_logo svg {
+    width: 150px;
+}
+
+.nav_signin button {
+    font-size: 14px;
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 24px;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.nav_signin button:hover {
+    background-color: #C11119;
+}
+
+.nav_dropdown {
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid #ffffff75;
+    position: relative;
+    width: fit-content;
+}
+
+.nav_dropdown select {
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 34px;
+    background-color: transparent;
+    color: #fff;
+    outline: 0;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid #ffffff75;
+}
+
+.nav_dropdown .world_nav_icon {
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    color: #fff;
+}
+
+.nav_dropdown .down_nav_icon {
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    color: #fff;
+}
+
+.header-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.header-content h1,
+p,
+h3,
+button {
+    color: #fff;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.header-content h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: row;
+    min-width: 12.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.email-form button {
+    background-color: #db0001;
+    padding: 15px 30px;
+    font-size: 23px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    min-width: 210px;
+}
+
+.email-form button:hover {
+    background-color: #C11119;
+}
+
+.email-form::placeholder {
+    color: #A5967F;
+}
+
+.email-form input {
+    all: unset;
+    background-color: #0f0f0f52;
+    color: #fff;
+    padding: 20px 10px;
+    outline: 0;
+    border: 0.1px solid #ffffff75;
+    border-radius: 4px;
+    max-width: 375px;
+    text-align: start;
+    width: 100%;
+}
+
+.email-form input:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 1px;
+}
+
+@media (max-width: 960px) {
+    .header-content h1 {
+        font-size: 32px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+    }
+
+    .header-content h3 {
+        font-size: 18px;
+    }
+
+    .email-form {
+        display: flex;
+        flex-direction: row;
+        min-width: 12.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .email-form button {
+        background-color: #db0001;
+        padding: 15px 30px;
+        font-size: 23px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        outline: 0;
+        border: 0;
+        border-radius: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+        min-width: 210px;
+    }
+
+    .nav_logo svg {
+        width: 120px;
+    }
+
+    .nav_signin button {
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 700px) {
+    .email-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 30px;
+    }
+
+    .header-content {
+        padding: 0px 20px;
+    }
+
+    .email-form button {
+        padding: 11px 15px;
+        min-width: 170px;
+    }
+
+    .email-form input {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .navbar ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav_dropdown select {
+        opacity: 0;
+        padding: 6px 2px;
+    }
+}
+
+.body-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    padding: 70px 35px;
+    align-items: center;
+    border-bottom: solid 8px #232323;
+    min-height: 600px;
+    padding: 0px 100px;
+}
+
+section .texts h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+section .texts p {
+    font-size: 26px;
+}
+
+.media {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.media.s1 img {
+    width: 560px;
+}
+
+.media.s1 video {
+    width: 32vw;
+    position: absolute;
+    top: 88px;
+    left: 75px;
+    z-index: -1;
+}
+
+section:nth-child(odd) .texts {
+    order: 2;
+}
+
+.media.s1 .download {
+    width: 400px;
+    padding: 15px;
+    background-color: #000;
+    display: flex;
+    border: 2px solid #a5967f78;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 23px;
+    left: 210px;
+}
+
+@media (max-width: 1580px) {
+    .media.s1 .download {
+        width: 400px;
+        bottom: 23px;
+        left: 144px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .media.s1 .download {
+        width: 390px;
+        bottom: 23px;
+        left: 87px;
+    }
+
+    .media.s1 img {
+        width: 540px;
+    }
+}
+
+.media.s1 span {
+    color: #fff;
+}
+
+.media.s1 .download .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 125px;
+    text-align: left;
+}
+
+.media.s1 .download .text .text_heading_d {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.media.s1 .download .text .text_text_d {
+    color: #0071EB;
+    font-size: 14px;
+}
+
+.media.s1 .download img {
+    height: 64px;
+    width: auto;
+    border-radius: 4px;
+}
+
+.media.s3 img {
+    width: 525px;
+}
+
+.media.s3 video {
+    width: 25vw;
+    position: absolute;
+    top: 30px;
+    left: 19%;
+    z-index: -1;
+}
+
+@media (max-width: 1260px) {}
+
+.faq {
+    padding: 70px 35px;
+    color: #fff;
+    border-bottom: solid 8px #232323;
+}
+
+.faq h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.faq .questions {
+    margin: 0 auto;
+    /* max-width: 635px; */
+    width: 70vw;
+    margin-top: 50px;
+}
+
+.faq .questions .question {
+    position: relative;
+    background-color: #303030;
+    border-top: 10px solid #000;
+}
+
+label {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #414141;
+}
+
+.faq .questions .question .q_header svg {
+    height: 40px;
+    right: 10px;
+    top: 14px;
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+
+.faq .questions .question .q_content {
+    padding: 0 30px;
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+
+.subscribe_faq_s {
+    /* margin: 0 auto; */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subscribe_faq_s h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.question input[type="checkbox"] {
+    display: none;
+}
+
+.question input[type="checkbox"]:checked~.q_content {
+    padding: 30px;
+    font-size: 20px;
+    max-height: 600px;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+
+.question input[type="checkbox"]:checked~.q_header svg {
+    transform: rotate(45deg);
+}
+
+.footer {
+    color: #AFAFAF;
+    margin: 60px 250px;
+}
+
+.footer .footer_content a {
+    text-decoration: underline;
+    color: #AFAFAF;
+}
+
+.contact_footer {
+    font-size: 17px;
+}
+
+.links_footer ul {
+    list-style: none;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-auto-rows: 50px;
+}
+
+.links_footer ul li {
+    text-decoration: underline;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.links_footer ul a {
+    text-decoration: none;
+    color: #AFAFAF;
+}
+
+.links_footer {
+    margin-top: 40px;
+}
+
+.footer .footer_content .nav_dropdown {
+    margin-bottom: 30px;
+}
