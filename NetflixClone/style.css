@@ -412,7 +412,6 @@ section .media.s4 img {
     position: relative;
     background-color: #303030;
     border-top: 10px solid #000;
-    padding-right: 12px;
 }
 
 label {
