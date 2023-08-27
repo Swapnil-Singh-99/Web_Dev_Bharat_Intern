@@ -26,6 +26,9 @@ To get started with the projects in this repository, follow these steps:
 2. Navigate to the project folder: `cd NetflixClone`
 3. Run it using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
+## 🔴Live Site
+[Netflix Clone](https://netflix-clone-nine-lyart.vercel.app/)
+
 ## License
 
 This repository is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use the code for educational purposes and to contribute to the project.
