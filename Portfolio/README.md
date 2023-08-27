@@ -27,7 +27,7 @@ To get started with the projects in this repository, follow these steps:
 3. Run it using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## 🔴Live Site
-[Netflix Clone](https://portfolio-eight-xi-64.vercel.app/)
+[Portfolio](https://portfolio-eight-xi-64.vercel.app/)
 
 ## License
 

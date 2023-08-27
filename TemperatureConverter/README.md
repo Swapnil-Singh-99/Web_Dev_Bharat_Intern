@@ -23,7 +23,7 @@ To get started with the projects in this repository, follow these steps:
 3. Run it using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## 🔴Live Site
-[Netflix Clone](https://web-dev-bharat-intern.vercel.app/)
+[Temperature Converter](https://web-dev-bharat-intern.vercel.app/)
 
 ## License
 
