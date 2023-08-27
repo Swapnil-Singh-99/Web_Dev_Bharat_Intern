@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Swapnil Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4c6ac41fce.js" crossorigin="anonymous"></script>
+    <script src="/Portfolio/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
+
 <body>
-    
+    <div class="header">
+        <div class="header-content">
+            <div class="name">Swapnil Singh</div>
+            <div class="sub-heading-name">Programmer • Web Developer</div>
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/swapnilsingh99"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/Swapnil-Singh-99"><i class="fa-brands fa-github-alt"></i></a></li>
+                    <li><a
+                            href="https://github.com/Swapnil-Singh-99/Swapnil-Singh-99/blob/main/Resume%20Swapnil%20Singh.pdf"><i
+                                class="fa-regular fa-file-pdf"></i></a></li>
+                    <li><a href="mailto:swapnilskumar99@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#about-me"><i class="fa-solid fa-angle-down"></i></a>
+    </div>
+    <div class="about-me" id="about-me">
+        <h1>About Me</h1>
+        <img src="/Portfolio/images/personal-picture.png" alt="">
+        <p>Swapnil Singh is a driven individual with a passion for technology and community service. As a recent
+            participant in Hacktoberfest 2022, he showcased his technical skills and commitment to open-source projects.
+            In addition, he has demonstrated his dedication to helping others by creating a Telegram bot to assist
+            thousands of people in Kanpur with booking COVID-19 vaccine appointments. Swapnil is a quick learner and a
+            team player, with excellent communication skills and a strong work ethic.</p>
+    </div>
+    <div class="skills" id="skills">
+        <div class="s-col">
+            <h2>Languages</h2>
+            <div class="skill-images">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+            </div>
+            <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
+        </div>
+        <div class="s-col">
+            <h2>Front-End</h2>
+            <div class="skill-images">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+            </div>
+            <p>My preferred technologies for front-end web development and component design.</p>
+        </div>
+        <div class="s-col">
+            <h2>Back-End</h2>
+            <div class="skill-images">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+            </div>
+            <p>My preferred technologies for back-end web programming and database architecture.</p>
+        </div>
+        <div class="s-col">
+            <h2>Tools</h2>
+            <div class="skill-images">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
+            </div>
+            <p>My favorite tools for version control, code editing, and container orchestration.</p>
+        </div>
+    </div>
+    <div class="featured-projects" id="projects">
+        <h1>Featured Projects</h1>
+        <div class="project">
+            <div class="project-content">
+                <h3>Cowin Slot Notifier</h3>
+                <div class="tech-stack">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+                    <img src="https://swapnil-singh-99.github.io/portfolio/assets/img/jpg/telegram.svg" />
+                </div>
+                <p>
+                    This is a notifier based on a Telegram bot that alerts users when there are nearby available vaccine
+                    slots. It has successfully assisted around 9,000 people in Kanpur in finding available vaccine
+                    slots. The bot was developed using the Python programming language and integrated with a Firestore
+                    database, Cowin API, and web scraping libraries.
+                </p>
+                <a href="">Check it out!</a>
+            </div>
+            <div class="project-image"><img
+                    src="https://swapnil-singh-99.github.io/portfolio/assets/img/jpg/cowin_slot_bot.png" alt=""></div>
+        </div>
+        <div class="project">
+            <div class="project-content">
+                <h3>Docu Dragon (Book Bot)</h3>
+                <div class="tech-stack">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <img src="https://swapnil-singh-99.github.io/portfolio/assets/img/jpg/telegram.svg" />
+                </div>
+                <p>
+                    This is a bot on Telegram that retrieves books from the internet and delivers them to the user. It
+                    was created using the Python programming language and incorporates web scraping and the Telegram bot
+                    API.
+                </p>
+                <a href="">Check it out!</a>
+            </div>
+            <div class="project-image"><img
+                    src="https://swapnil-singh-99.github.io/portfolio/assets/img/jpg/DocuDragon.png" alt=""></div>
+        </div>
+        <div class="project">
+            <div class="project-content">
+                <h3>Youtube Flask App</h3>
+                <div class="tech-stack">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+                </div>
+                <p>
+                    It is simple Youtube Flask App that display recent videos from different channels when reloaded. It
+                    uses Youtube API to fetch video data and displays it on the browser using Python Flask.
+                </p>
+                <a href="">Check it out!</a>
+            </div>
+            <div class="project-image"><img
+                    src="https://swapnil-singh-99.github.io/portfolio/assets/img/jpg/youtube%20flask%20app.png" alt="">
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-content">
+                <h3>Guess The Number</h3>
+                <div class="tech-stack">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+                </div>
+                <p>
+                    Guess the number app lets you guess a number that computer has chosen. It is fun to play game it
+                    tell the user if the guessed number is high or low from the actual number or not. It is made using
+                    Python Flask.
+                </p>
+                <a href="">Check it out!</a>
+            </div>
+            <div class="project-image"><img
+                    src="https://swapnil-singh-99.github.io/portfolio/assets/img/jpg/Guess-the-number.png" alt=""></div>
+        </div>
+    </div>
+    <section id="contact">
+        <div class="section-header">
+            <div class="container">
+                <h2>Send a message</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="contact-form" onsubmit="sendEmail()">
+                    <form action="" id="contact">
+                        <div class="input-box">
+                            <input type="text" id="name" required="true" name="">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="email" required="true" name="">
+                            <span>Email</span>
+                        </div>
+                        <div class="input-box">
+                            <textarea required="true" id="message" name=""></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="input-box">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Made with <span><i class="fas fa-heart" style="color: #e31b23;"></i></span> by <a
+                href="https://github.com/Swapnil-Singh-99">@Swapnil-Singh-99</a></p>
+    </div>
 </body>
+
 </html>
