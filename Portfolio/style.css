@@ -15,7 +15,7 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     vertical-align: bottom;
-    width: 100vw;
+    width: calc(100vw - 16px);;
     height: 100vh;
     overflow-x: hidden;
     background-repeat: no-repeat;
@@ -31,12 +31,13 @@
     color: #fff;
     position: absolute;
     font-family: 'Rubik', sans-serif;
-    width: 80%;
+    /* width: 80%; */
     top: 50%;
     left: 50%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    overflow-x: hidden;
 }
 
 .name {
